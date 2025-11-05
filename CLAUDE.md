@@ -19,6 +19,8 @@
 - When work is completed, update the work plan using the `memory-bank-updater` skill.
 
 ## MCP 도구 사용 규칙
+- Always use the mcp serena tools
+- Always use the `mcp__serena-mcp__list_memories` tool to list available memories before using any other tool.
 - When using Context7, make sure that you keep the range of output in the range 2k to 10k based on what you think is the best.
 - Maintain a file named library.md to store the Library IDs that you search for and before searching make sure that you check the file and use the library ID already available. Otherwise, search for it.
 
