@@ -15,9 +15,9 @@
       "source": "./",
       "strict": false,
       "skills": [
-        "./basic-skills/memory-bank-updater",
-        "./basic-skills/task-planner",
-        "./basic-skills/branch-manager"
+        "./memory-bank-updater",
+        "./task-planner",
+        "./branch-manager"
       ]
     }
   ]
