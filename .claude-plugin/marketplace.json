@@ -8,6 +8,14 @@
     "description": "Coding basic skills for project workflow management",
     "version": "1.0.0"
   },
+  "agents": [
+    "backend-api-developer",
+    "frontend-ui-developer",
+    "ui-ux-designer",
+    "web-ui-tester",
+    "code-debugger",
+    "technical-documentation-writer"
+  ],
   "plugins": [
     {
       "name": "coding-basic-skills",
@@ -15,10 +23,10 @@
       "source": "./",
       "strict": false,
       "skills": [
-        "./memory-bank-updater",
-        "./task-planner",
-        "./branch-manager",
-        "./project-reviewer"
+        "./Skills/memory-bank-updater",
+        "./Skills/task-planner",
+        "./Skills/branch-manager",
+        "./Skills/project-reviewer"
       ]
     }
   ]
