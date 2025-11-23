@@ -15,3 +15,6 @@ review/
 # env
 .venv/
 .env
+
+# Claude
+.claude/
