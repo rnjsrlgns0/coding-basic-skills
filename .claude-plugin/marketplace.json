@@ -5,29 +5,21 @@
     "email": "rnjsrlgns0@gmail.com"
   },
   "metadata": {
-    "description": "Coding basic skills for project workflow management",
-    "version": "1.0.0"
+    "description": "Modular plugin collection for development and data science workflows",
+    "version": "2.0.0"
   },
-  "agents": [
-    "backend-api-developer",
-    "frontend-ui-developer",
-    "ui-ux-designer",
-    "web-ui-tester",
-    "code-debugger",
-    "technical-documentation-writer"
-  ],
   "plugins": [
     {
-      "name": "coding-basic-skills",
-      "description": "프로젝트 진행 시 기본적으로 사용하는 skills - 브랜치 관리, 작업 계획, 메모리 뱅크 업데이트",
-      "source": "./",
-      "strict": false,
-      "skills": [
-        "./Skills/memory-bank-updater",
-        "./Skills/task-planner",
-        "./Skills/branch-manager",
-        "./Skills/project-reviewer"
-      ]
+      "name": "development",
+      "version": "0.5",
+      "description": "Development workflow and coding skills for software engineering projects",
+      "source": "./plugins/development"
+    },
+    {
+      "name": "data-science",
+      "version": "0.3",
+      "description": "Data science and machine learning workflow tools",
+      "source": "./plugins/data-science"
     }
   ]
 }

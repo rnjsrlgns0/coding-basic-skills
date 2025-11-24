@@ -1,0 +1,35 @@
+{
+  "name": "coding-basic-skills-development",
+  "owner": {
+    "name": "hun0324",
+    "email": "rnjsrlgns0@gmail.com"
+  },
+  "metadata": {
+    "description": "Development workflow and coding skills for software engineering projects",
+    "version": "1.0.0",
+    "category": "development",
+    "tags": ["development", "workflow", "git", "testing", "backend", "frontend", "debugging"]
+  },
+  "agents": [
+    "backend-api-developer",
+    "frontend-ui-developer",
+    "ui-ux-designer",
+    "web-ui-tester",
+    "code-debugger",
+    "technical-documentation-writer"
+  ],
+  "plugins": [
+    {
+      "name": "coding-basic-skills-dev",
+      "description": "Core development workflow skills including task planning, memory management, branch control, and project review",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/task-planner",
+        "./skills/memory-bank-updater",
+        "./skills/branch-manager",
+        "./skills/project-reviewer"
+      ]
+    }
+  ]
+}

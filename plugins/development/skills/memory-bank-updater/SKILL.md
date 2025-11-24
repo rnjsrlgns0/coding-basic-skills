@@ -74,95 +74,14 @@ license: Apache 2.0
 
 | 작업 유형 | 업데이트 대상 파일 |
 |---------|----------------|
-| 새 기능 추가 | progress.md, techContext.md, activeContext.md |
-| 기술 스택 변경 | techContext.md, progress.md |
-| 데이터 구조 변경 | dataflow.md, techContext.md, progress.md |
-| 테스트 수행 | test_results/, progress.md |
-| 프로젝트 목표 변경 | projectBrief.md, progress.md |
+| 새 기능 추가 | progress.md|
+| 기술 스택 변경 | techContext.md|
+| 데이터 구조 변경 | dataflow.md, techContext.md |
+| 테스트 수행 | test_results/|
+| 프로젝트 목표 변경 | projectBrief.md |
 | 작업 진행 중 | activeContext.md |
 
 ### Step 3: 각 파일 업데이트
-
-#### activeContext.md 업데이트
-작업이 **진행 중**일 때:
-```markdown
-# 현재 활성 컨텍스트
-
-## 진행 중인 작업: [작업명]
-- 시작일: YYYY-MM-DD
-- 목표: [작업 목표]
-- 현재 상황: [진행 상황]
-- 다음 단계: [다음에 할 일]
-- 문제/고려사항: [직면한 문제나 고려할 사항]
-```
-
-작업이 **완료**되었을 때:
-- activeContext.md 내용을 요약
-- progress.md에 추가
-- activeContext.md 초기화
-
-#### progress.md 업데이트
-작업 완료 시 최상단에 추가 (시간 역순):
-```markdown
-# 프로젝트 진행 상황
-
-## YYYY-MM-DD
-### [작업명/기능명]
-- 완료 내용: [무엇을 했는지]
-- 주요 변경사항: [핵심 변경점]
-- 영향 범위: [어떤 부분에 영향]
-- 관련 파일: [변경된 파일 목록]
-```
-
-#### techContext.md 업데이트
-기술적 결정이 있을 때:
-```markdown
-# 기술 컨텍스트
-
-## 주요 기술 스택
-### [라이브러리/프레임워크명]
-- 버전: [버전]
-- 용도: [사용 목적]
-- 선택 이유: [왜 선택했는지]
-- 도입일: YYYY-MM-DD
-
-## 아키텍처 결정
-### [결정사항 제목]
-- 날짜: YYYY-MM-DD
-- 결정 내용: [무엇을 결정했는지]
-- 근거: [왜 그렇게 결정했는지]
-- 대안: [고려했던 다른 옵션]
-```
-
-#### dataflow.md 업데이트
-데이터 흐름 변경 시:
-```markdown
-# 데이터 플로우
-
-## [시스템/모듈명] 데이터 흐름
-### 입력
-- [입력 데이터 구조]
-
-### 처리 과정
-1. [단계 1]
-2. [단계 2]
-
-### 출력
-- [출력 데이터 구조]
-
-### 업데이트 이력
-- YYYY-MM-DD: [변경 사항]
-```
-
-#### test_results/ 업데이트
-테스트 수행 후:
-```
-test_results/
-├── YYYY-MM-DD_[테스트명]/
-│   ├── README.md (테스트 개요 및 결과 요약)
-│   ├── screenshots/ (필요시)
-│   └── metrics.json (성능 데이터)
-```
 
 ### Step 4: 한글 작성 확인
 
@@ -171,71 +90,7 @@ test_results/
 - 기술 용어는 필요시 영문 병기 (예: "리액트(React)")
 - 코드나 파일명은 예외
 
-## 실행 예시
-
-### 예시 1: 새 기능 추가 완료
-
-**완료된 작업**: 사용자 인증 기능 구현
-
-**업데이트 순서**:
-1. activeContext.md 읽기 → 진행 중이던 작업 확인
-2. progress.md 업데이트:
-   ```markdown
-   ## 2025-10-31
-   ### 사용자 인증 기능 구현 완료
-   - 완료 내용: JWT 기반 인증 시스템 구현
-   - 주요 변경사항:
-     - /auth/login, /auth/register 엔드포인트 추가
-     - 미들웨어를 통한 토큰 검증 구현
-   - 영향 범위: 백엔드 API, 프론트엔드 로그인 페이지
-   - 관련 파일: src/auth/, src/middleware/auth.js
-   ```
-
-3. techContext.md 업데이트:
-   ```markdown
-   ## 주요 기술 스택
-   ### jsonwebtoken
-   - 버전: 9.0.0
-   - 용도: JWT 토큰 생성 및 검증
-   - 선택 이유: 표준 라이브러리, 활발한 유지보수
-   - 도입일: 2025-10-31
-   ```
-
-4. activeContext.md 초기화
-
-### 예시 2: 테스트 수행 후
-
-**완료된 작업**: 인증 시스템 통합 테스트
-
-**업데이트 순서**:
-1. test_results/2025-10-31_auth-integration/ 생성
-2. README.md 작성:
-   ```markdown
-   # 인증 시스템 통합 테스트
-
-   ## 테스트 날짜
-   2025-10-31
-
-   ## 테스트 항목
-   - 로그인 성공/실패 시나리오
-   - 토큰 검증
-   - 권한 없는 접근 차단
-
-   ## 결과
-   - 전체: 15개
-   - 성공: 15개
-   - 실패: 0개
-   ```
-
-3. progress.md 업데이트:
-   ```markdown
-   ## 2025-10-31
-   ### 인증 시스템 통합 테스트 완료
-   - 완료 내용: 15개 테스트 케이스 전부 통과
-   - 주요 결과: 인증 플로우 안정성 검증 완료
-   ```
-
-### Step 4: 중복 방지 검증
+### Step 5: 중복 방지 검증
 
 업데이트 전 다음을 확인:
 1. 같은 내용이 여러 파일에 중복 기록되지 않았는가?
@@ -252,6 +107,7 @@ test_results/
 5. **시간순 정렬**: progress.md는 최신 항목이 상단 (역순)
 6. **간결성**: activeContext.md는 진행 중인 작업만, 완료 시 progress.md로 요약 이동
 7. **코드베이스 작업**: 코드베이스 작업은 반드시 `serena` 도구를 사용하여 작업을 합니다.
+
 ## 참고 자료
 
 .serena/memories/의 각 파일 형식과 작성 가이드는 `references/memory-bank-guide.md`에 상세히 기록되어 있습니다. 업데이트 시 참조하세요.

@@ -28,11 +28,7 @@ This returns memory filenames with descriptions, helping you identify relevant c
 **Example Output**:
 ```
 Memories:
-- architecture-decisions.md: Key architectural patterns and technology choices
-- api-conventions.md: REST API naming and structure standards
-- database-schema.md: Current database schema and relationships
-- plan-auth-system-2025-10-15.md: Authentication implementation plan
-- coding-standards.md: Code style and best practices
+
 ```
 
 ### Phase 2: Context Loading

@@ -1,0 +1,81 @@
+{
+  "name": "coding-basic-skills-datascience",
+  "owner": {
+    "name": "hun0324",
+    "email": "rnjsrlgns0@gmail.com"
+  },
+  "metadata": {
+    "description": "Data science, machine learning, and scientific computing skills",
+    "version": "1.0.0",
+    "category": "data-science",
+    "tags": ["data-science", "machine-learning", "analytics", "visualization", "statistics", "scientific-computing"]
+  },
+  "agents": [
+    "data-scientist",
+    "data-cleaning-specialist",
+    "data-visualization-specialist",
+    "feature-engineering-specialist",
+    "ml-modeling-specialist",
+    "model-evaluation-specialist"
+  ],
+  "plugins": [
+    {
+      "name": "scientific-skills",
+      "description": "Comprehensive scientific computing and data science skills from K-Dense Inc",
+      "source": "./scientific-skills",
+      "strict": false,
+      "skills": [
+        "./scientific-skills/scientific-skills/aeon",
+        "./scientific-skills/scientific-skills/chembl-database",
+        "./scientific-skills/scientific-skills/clinicaltrials-database",
+        "./scientific-skills/scientific-skills/clinpgx-database",
+        "./scientific-skills/scientific-skills/clinvar-database",
+        "./scientific-skills/scientific-skills/cosmic-database",
+        "./scientific-skills/scientific-skills/datacommons-client",
+        "./scientific-skills/scientific-skills/document-skills",
+        "./scientific-skills/scientific-skills/drugbank-database",
+        "./scientific-skills/scientific-skills/ena-database",
+        "./scientific-skills/scientific-skills/ensembl-database",
+        "./scientific-skills/scientific-skills/fda-database",
+        "./scientific-skills/scientific-skills/gene-database",
+        "./scientific-skills/scientific-skills/geo-database",
+        "./scientific-skills/scientific-skills/gwas-database",
+        "./scientific-skills/scientific-skills/hmdb-database",
+        "./scientific-skills/scientific-skills/kegg-database",
+        "./scientific-skills/scientific-skills/literature-review",
+        "./scientific-skills/scientific-skills/markitdown",
+        "./scientific-skills/scientific-skills/matplotlib",
+        "./scientific-skills/scientific-skills/metabolomics-workbench-database",
+        "./scientific-skills/scientific-skills/networkx",
+        "./scientific-skills/scientific-skills/opentargets-database",
+        "./scientific-skills/scientific-skills/paper-2-web",
+        "./scientific-skills/scientific-skills/pdb-database",
+        "./scientific-skills/scientific-skills/peer-review",
+        "./scientific-skills/scientific-skills/perplexity-search",
+        "./scientific-skills/scientific-skills/pubchem-database",
+        "./scientific-skills/scientific-skills/pubmed-database",
+        "./scientific-skills/scientific-skills/pufferlib",
+        "./scientific-skills/scientific-skills/pymc",
+        "./scientific-skills/scientific-skills/pymoo",
+        "./scientific-skills/scientific-skills/pytorch-lightning",
+        "./scientific-skills/scientific-skills/reactome-database",
+        "./scientific-skills/scientific-skills/reportlab",
+        "./scientific-skills/scientific-skills/scientific-writing",
+        "./scientific-skills/scientific-skills/scikit-learn",
+        "./scientific-skills/scientific-skills/scikit-survival",
+        "./scientific-skills/scientific-skills/seaborn",
+        "./scientific-skills/scientific-skills/shap",
+        "./scientific-skills/scientific-skills/stable-baselines3",
+        "./scientific-skills/scientific-skills/statsmodels",
+        "./scientific-skills/scientific-skills/string-database",
+        "./scientific-skills/scientific-skills/sympy",
+        "./scientific-skills/scientific-skills/torch_geometric",
+        "./scientific-skills/scientific-skills/transformers",
+        "./scientific-skills/scientific-skills/umap-learn",
+        "./scientific-skills/scientific-skills/uniprot-database",
+        "./scientific-skills/scientific-skills/uspto-database",
+        "./scientific-skills/scientific-skills/zinc-database"
+      ]
+    }
+  ]
+}

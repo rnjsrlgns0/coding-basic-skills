@@ -13,6 +13,27 @@
 - **패키지 관리**: UV 사용 (pip 대신)
 - **Python 버전**: 3.13
 
+## Plugin 관리
+이 프로젝트는 **개발(development)**과 **데이터 사이언스(data-science)** 두 가지 플러그인으로 구성되어 있습니다.
+
+### 사용 가능한 플러그인
+- **development**: 웹 개발 워크플로우
+  - 에이전트: backend-api-developer, frontend-ui-developer, ui-ux-designer, web-ui-tester, code-debugger, technical-documentation-writer
+  - 스킬: task-planner, memory-bank-updater, branch-manager, project-reviewer
+
+- **data-science**: 데이터 분석 및 ML
+  - 에이전트: data-scientist, data-cleaning-specialist, data-visualization-specialist, feature-engineering-specialist, ml-modeling-specialist, model-evaluation-specialist
+  - 스킬: 50개의 scientific-skills (aeon, matplotlib, scikit-learn, pytorch-lightning 등)
+
+### 플러그인 프로필 전환
+`.claude/profiles.json`에서 활성 프로필을 변경할 수 있습니다:
+
+- **development**: 개발 프로젝트용 (웹 애플리케이션, API 개발)
+- **data-science**: 데이터 분석용 (ML 모델링, 데이터 처리)
+- **full**: 모든 기능 활성화 (통합 프로젝트)
+
+루트 `.claude-plugin/marketplace.json`에서 플러그인별 `enabled` 값을 `true/false`로 설정하여 개별 제어할 수도 있습니다.
+
 ## Workflow
 - Always use the `branch-manager` skill to manage branches before and after starting any work.
 - Always create work plans using the `task-planner` skill.
