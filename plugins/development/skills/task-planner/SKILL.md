@@ -160,9 +160,7 @@ description: 사용자가 명시적으로 작업 계획이나 프로젝트 계�
 - `web-app-tester`: 자동화 테스트, 성능 모니터링, UI/UX 검증
 - `code-debugger`: 버그 식별, 디버깅, 오류 해결
 - `technical-documentation-writer`: 문서 업데이트, 진행 상황 추적
-- `Explore`: 빠른 코드베이스 탐색 (구조 이해용)
-- `Plan`: 작업 계획 및 분해
-- `general-purpose`: 복잡한 다단계 작업, 리서치, 코드 검색
+- `general-purpose`: 복잡한 다단계 작업, 리서치, subagent 작업 조율 
 
 **서브에이전트 선택 가이드:**
 ```
