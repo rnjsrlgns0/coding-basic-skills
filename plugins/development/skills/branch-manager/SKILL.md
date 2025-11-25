@@ -26,22 +26,22 @@ The repository follows this hierarchical branch structure:
 ```
 main (production)
 └── develop (integration branch)
-    ├── feat:<feature-name>/leaf-<component-description>  (AI work)
-    ├── feat:<feature-name>/leaf-<another-component>      (AI work)
-    └── feat:<feature-name>/core-architecture             (Human work)
+    ├── feat-<feature-name>/leaf-<component-description>  (AI work)
+    ├── feat-<feature-name>/leaf-<another-component>      (AI work)
+    └── feat-<feature-name>/core-architecture             (Human work)
 ```
 
 **Branch Types:**
 
 - **main**: Production-ready code, protected branch
 - **develop**: Integration branch for testing before production
-- **feat:<name>/leaf-***: AI-driven component work (UI, API, utilities)
-- **feat:<name>/core-***: Human-managed architecture and critical systems
+- **feat-<name>/leaf-***: AI-driven component work (UI, API, utilities)
+- **feat-<name>/core-***: Human-managed architecture and critical systems
 
 **Additional branch type prefixes** (when applicable):
-- **bugfix:<name>/leaf-***: Bug fixes for specific components
-- **hotfix:<name>/leaf-***: Critical production fixes
-- **refactor:<name>/leaf-***: Code refactoring work
+- **bugfix-<name>/leaf-***: Bug fixes for specific components
+- **hotfix-<name>/leaf-***: Critical production fixes
+- **refactor-<name>/leaf-***: Code refactoring work
 
 ## Workflow
 
@@ -71,7 +71,7 @@ git checkout develop
 git pull origin develop
 
 # Create and switch to new branch
-git checkout -b feat:<feature-name>/leaf-<component-description>
+git checkout -b feat-<feature-name>/leaf-<component-description>
 
 # Example:
 git checkout -b feat:button-feature/leaf-ui-component
@@ -110,7 +110,7 @@ git checkout develop
 git pull origin develop
 
 # Return to feature branch
-git checkout feat:<feature-name>/leaf-<component>
+git checkout feat-<feature-name>/leaf-<component>
 ```
 
 **Step 2: Merge into develop**
@@ -120,7 +120,7 @@ git merge develop
 
 # Switch to develop and merge feature
 git checkout develop
-git merge --no-ff feat:<feature-name>/leaf-<component>
+git merge --no-ff feat-<feature-name>/leaf-<component>
 ```
 
 **Step 3: Test in develop**
@@ -131,10 +131,10 @@ git merge --no-ff feat:<feature-name>/leaf-<component>
 **Step 4: Clean up branch (optional)**
 ```bash
 # Delete local branch after successful merge
-git branch -d feat:<feature-name>/leaf-<component>
+git branch -d feat-<feature-name>/leaf-<component>
 
 # Delete remote branch if pushed
-git push origin --delete feat:<feature-name>/leaf-<component>
+git push origin --delete feat-<feature-name>/leaf-<component>
 ```
 
 #### Failure Path: Delete Branch
@@ -146,10 +146,10 @@ If the task failed or changes are not needed:
 git checkout develop
 
 # Delete local branch (use -D for force delete with uncommitted changes)
-git branch -D feat:<feature-name>/leaf-<component>
+git branch -D feat-<feature-name>/leaf-<component>
 
 # Delete remote branch if it was pushed
-git push origin --delete feat:<feature-name>/leaf-<component>
+git push origin --delete feat-<feature-name>/leaf-<component>
 ```
 
 ### 4. Integration to Main (Production)
@@ -180,7 +180,7 @@ Follow these conventions strictly for consistency:
 
 ### Format Pattern
 ```
-<type>:<feature-name>/<work-type>-<component-description>
+<type>-<feature-name>/<work-type>-<component-description>
 ```
 
 ### Components
